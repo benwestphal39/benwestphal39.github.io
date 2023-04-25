@@ -517,6 +517,20 @@ transform: translateY(-40vh)!important;
 	}
 }
 
+.smallertext h2 {
+	font-size: 1.75rem;
+}
+  
+.smallertext h2.smaller {
+	font-size: 1.75rem;
+}
+
+.smallertext {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 
 
 @media (max-width: 1385px) {

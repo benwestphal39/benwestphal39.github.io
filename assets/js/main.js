@@ -1,6 +1,7 @@
 window.onload = function() {
     const phrases = ["言語を選択してください。", "Vennligst velg språket ditt.", "請選擇你的語言。", "Please choose your language."];
     const h2 = document.getElementById("blink-text");
+    h2.classList.add('smaller');
 
     let i = 0;
     setInterval(() => {
