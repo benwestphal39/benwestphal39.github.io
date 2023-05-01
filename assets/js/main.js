@@ -1,12 +1,18 @@
 window.onload = function() {
-    const phrases = ["言語を選択してください。", "Vennligst velg språket ditt.", "請選擇你的語言。", "Please choose your language."];
+    const phrases = ["言語を選択してください", "Vennligst velg språket ditt", "請選擇你的語言", "Please choose your language"];
     const h2 = document.getElementById("blink-text");
     h2.classList.add('smaller');
 
     let i = 0;
     setInterval(() => {
-    h2.innerText = phrases[i];
-    i = (i + 1) % phrases.length;
+        while (h2.firstChild) {
+            h2.removeChild(h2.firstChild);
+        }
+        //h2.innerHTML.span = phrases[i];
+        const newSpan = document.createElement("span");
+        newSpan.appendChild(document.createTextNode(phrases[i]));
+        h2.appendChild(newSpan)
+        i = (i + 1) % phrases.length;
     }, 4000);
   };
 
@@ -15,15 +21,15 @@ $(document).ready(function() {
 
     //  SET THEMES ON LOAD
     if($.cookie("ody-theme") == 1){
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #F65656, #393CF2) 0% 0% / 200% '});
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #541cd0, #0f4c29) 0% 0% / 200% '});
         $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
     }
     
     if($.cookie("ody-theme") == 2){
     
     
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #58B5C1, #CFCFCF) 0% 0% / 200% '});
-        $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #534548, #da0628) 0% 0% / 200% '});
+	    $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
     }
     
     if($.cookie("ody-theme") == 3){
@@ -34,28 +40,26 @@ $(document).ready(function() {
     }
     
     if(!$.cookie("ody-theme")){
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #F65656, #393CF2) 0% 0% / 200% '});
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #541cd0, #0f4c29) 0% 0% / 200% '});
         $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
     }
     
     
     //  SET THEMES MANUAL
-    $("#Taurine").on('click',function(){
+    $("#Lean").on('click',function(){
     
         $.cookie("ody-theme", 1);
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #F65656, #393CF2) 0% 0% / 200% '});
+    
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #541cd0, #0f4c29) 0% 0% / 200% '});
         $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
-    
-    
-     });
-    
-    $("#Sugarfree").on('click',function(){
+    });
+
+    $("#Meridian").on('click',function(){
     
         $.cookie("ody-theme", 2);
-    
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #58B5C1, #CFCFCF) 0% 0% / 200% '});
-        $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
-     });
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #534548, #da0628) 0% 0% / 200% '});
+	    $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
+    });
     
     $("#Mango").on('click',function(){
     
