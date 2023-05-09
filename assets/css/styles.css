@@ -1,7 +1,8 @@
 @font-face {
 	font-family: Empire;
 	font-display: block;
-	src: url(/fonts/aAbsoluteEmpire.woff2);
+	src: url(/fonts/Fonarto.woff2);
+
 }
 
 body {
@@ -64,6 +65,15 @@ body {
 	transition-timing-function: ease;
 }
 
+.langcenterfix h2 {
+	justify-self: center;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	vertical-align: middle;
+}
+
 #hero-container > div{
 	margin-top: -10vh;
 }
@@ -73,12 +83,24 @@ body {
 }
 
 #hero-container-welcome > div{
-	margin-top: -18vh;
+	margin-top: -20vh;
 }
 
 .home #hero-container-welcome > div {
 	margin-bottom: -10vh;
 }
+
+/*@media (max-width: 1139px) {
+	.assignmentitem p{
+		padding-left: 0;
+		padding-right: 00;
+	}
+}*/
+
+/*.assignmentitem p {
+	padding-top: -200vh;
+	padding-bottom: -200vh;
+}*/
 
 .blink {
     animation: blinker 4s linear infinite;
@@ -140,20 +162,20 @@ body {
 	border-radius: 100%;
 }
 
-#Taurine{
-	background: linear-gradient(340deg, #F65656, #393CF2);
+#Meridian{
+	background: linear-gradient(340deg, #4B3F72, #D07119);
 }
 
 .header-box {
 
 	position: relative;
 }
-#Sugarfree{
-	background: linear-gradient(340deg, #CFCFCF,#58B5C1);
+#Lean{
+	background: linear-gradient(340deg, #0f4c29, #541cd0);
 }
 
 #Mango{
-	background: linear-gradient(340deg, #00FFFF, #FFA201);
+	background: linear-gradient(340deg, #5B85AA, #372248);
 }
 .twittericon i {
 	font-size: 1.5em;
@@ -205,9 +227,32 @@ margin-top: 8vh;
 
 }
 
+.iframe-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+.iframe-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.artifact-title {
+	padding-top: 4vh;
+}
+
 @media (prefers-color-scheme: dark) {
 	#silhouette {
-		content: url(../../assets/images/silhouette_dark.png);
+		content: url(../../assets/images/silhouette_dark.webp);
+	}
+
+	#welcomeimg {
+		content: url(../../assets/images/welcome_dark.webp);
 	}
 }
 
@@ -530,8 +575,6 @@ transform: translateY(-40vh)!important;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-
-
 
 @media (max-width: 1385px) {
 

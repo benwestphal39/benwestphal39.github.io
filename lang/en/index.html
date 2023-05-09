@@ -8,12 +8,12 @@
 		<title>Ben Westphal - Portfolio</title>
 
 		<!-- Favicons -->
-		<link rel="shortcut icon" href="../assets/images/favicon.png"/>
-		<link rel="apple-touch-icon" href="../assets/images/icon.png"/>
-		<link rel="icon" type="image/png" sizes="180x180" href="../assets/images/icon.png"/>
-		<link rel="manifest" href="../assets/images/manifest.json" />
+		<link rel="shortcut icon" href="../../assets/images/favicon.png"/>
+		<link rel="apple-touch-icon" href="../../assets/images/icon.png"/>
+		<link rel="icon" type="image/png" sizes="180x180" href="../../assets/images/icon.png"/>
+		<link rel="manifest" href="../../assets/images/manifest.json" />
 		<meta name="msapplication-TileColor" content="#F65656" />
-		<meta name="msapplication-TileImage" content="../assets/images/icon.png"/>
+		<meta name="msapplication-TileImage" content="../../assets/images/icon.png"/>
 		<meta name="theme-color" content="#F65656" media="only x">
 		<!-- Favicons  -->
 
@@ -52,8 +52,8 @@
 			  .hero-jumbo {
 				height: 400px;
 			  }
-			  .hero-text img {
-				margin-top: 35px; /* adjust the margin-top to position the image correctly */
+			  .hero-text h2 {
+				margin-top: 100px; /* adjust the margin-top to position the image correctly */
 			  }
 			}
 		</style>
@@ -72,12 +72,10 @@
 		<!-- Bootstrap Brand Bar -->
 		<header class="hero-jumbo">
 
-
-
 		<nav class="navbar navbar-light fixed-top clearbg">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="/">
-					<h2>BEN WESTPHAL</h2>
+					<h2>Ben Westphal</h2>
 				</a>
 				<div class="ml-autok">
 				</div>
@@ -93,7 +91,7 @@
 
 				</div>
 				<h1 class="hero-text">
-					<a href="/">BEN WESTPHAL</a>
+					<a href="/">Ben Westphal</a>
 				</h1>
 			
 				<p class="lead hero-subtext">Personal Portfolio</p>
@@ -101,7 +99,7 @@
 				<p class="lead hero-versions">Student, Programmer, Video Creator</p>
 
 				<div class="styles">
-					<div id="Taurine"></div><div id="Sugarfree"></div><div id="Mango"></div>
+					<div id="Lean"></div><div id="Meridian"></div><div id="Mango"></div>
 				</div>
 				
 			</div>
@@ -116,7 +114,7 @@
 
 	
 	<figure class="topimg">
-		<img src="../../assets/images/topimage.png" alt="img1">
+		<img media="(prefers-color-scheme: dark)" id="welcomeimg" src="../../assets/images/welcome_light.webp" data-light="../../assets/images/welcome_light.webp" data-dark="../../assets/images/welcome_dark.webp" alt="welcome">
 	</figure>
 
 	<div class="s1">
@@ -127,7 +125,7 @@
 <div class="who">
 
 		<figure>
-			<img media="(prefers-color-scheme: dark)" id="silhouette" src="../../assets/images/silhouette_light.png" data-light="../../assets/images/silhouette_light.png" data-dark="../../assets/images/silhouette_dark.png" alt="silhouette">
+			<img media="(prefers-color-scheme: dark)" id="silhouette" src="../../assets/images/silhouette_light.webp" data-light="../../assets/images/silhouette_light.webp" data-dark="../../assets/images/silhouette_dark.webp" alt="silhouette">
 		</figure>
 	
 	<div class="section feature alt">
@@ -147,7 +145,7 @@
 					<div class="w-100">
 						<h2 style="margin-top: 20px;" class="promo-title">Student</h2>
 						<p class="mb-0">
-							I am a 3rd year high-school student from Guam! I'm excited to graduate next year but I'm also not really excited for college.
+							I am a high-school student from Guam! I'm excited to graduate next year but I'm also not really excited for college.
 						</p>
 					</div>
 				</div>
@@ -171,8 +169,6 @@
 					</div>
 				</div>
 			</div>
-
-
 			
 			<div class="row">
 				<div
@@ -204,52 +200,76 @@
 		<h2>Want to see some of my work as a student?</h2>
 	</div>
 	<div class="container">
-		<div class="row apps text-center">
+		<div class="row apps text-center justify-content-center">
+
 			<div class="col-md-4 col-12 text-center">
 				<div class="col-12">
-					<a href="">
+					<a href="english">
 						<img
 							class="app-image"
-							src="../../assets/images/tempimage.png"
+							src="../../assets/images/classicons/classicon_english.webp"
 							alt=""
 						/>
-						<h3>Link1</h3>
+						<h3>English</h3>
 					</a>
-					<p class="lead">
+					<!-- <p class="lead">
 					Placeholder link; does nothing currently.
-					</p>
+					</p> -->
 				</div>
 			</div>
+
 			<div class="col-md-4 col-12 text-center">
 				<div class="col-12">
-					<a href="">
+					<a href="lifeskills">
 						<img
 							class="app-image"
-							src="../../assets/images/tempimage.png"
+							src="../../assets/images/classicons/classicon_lifeskills.webp"
 							alt=""
 						/>
-						<h3>Link2</h3>
+						<h3>Life Skills</h3>
 					</a>
-					<p class="lead">
-						Placeholder link; does nothing currently.
-					</p>
 				</div>
 			</div>
+
 			<div class="col-md-4 col-12 text-center">
 				<div class="col-12">
-					<a href="">
+					<a href="precal">
 						<img
 							class="app-image"
-							src="../../assets/images/tempimage.png"
+							src="../../assets/images/classicons/classicon_precal.webp"
 							alt=""
 						/>
-						<h3>Link3</h3>
+						<h3>Precalculus</h3>
 					</a>
-					<p class="lead">
-						Placeholder link; does nothing currently.
-					</p>
 				</div>
 			</div>
+
+			<div class="col-md-4 col-12 text-center">
+				<div class="col-12">
+					<a href="chem">
+						<img
+							class="app-image"
+							src="../../assets/images/classicons/classicon_chem.webp"
+							alt=""
+						/>
+						<h3>Chemistry</h3>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-12 text-center">
+				<div class="col-12">
+					<a href="ushistory">
+						<img
+							class="app-image"
+							src="../../assets/images/classicons/classicon_history.webp"
+							alt=""
+						/>
+						<h3>US History</h3>
+					</a>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -266,6 +286,6 @@
 			</div>
 		</footer>
 		<hr>
-	<script type='text/javascript'  src="https://taurine.app/9920c31556dda92f7ee58b453c8b0b25a6fb2c6fd8bc58f04a41dbdb0cd86a3a/inject.js"></script></body>
+	</body>
 </html>
 
