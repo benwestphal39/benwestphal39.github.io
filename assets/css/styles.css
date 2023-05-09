@@ -83,7 +83,7 @@ body {
 }
 
 #hero-container-welcome > div{
-	margin-top: -18vh;
+	margin-top: -20vh;
 }
 
 .home #hero-container-welcome > div {
@@ -163,7 +163,7 @@ body {
 }
 
 #Meridian{
-	background: linear-gradient(340deg, #534548, #da0628);
+	background: linear-gradient(340deg, #4B3F72, #D07119);
 }
 
 .header-box {
@@ -175,7 +175,7 @@ body {
 }
 
 #Mango{
-	background: linear-gradient(340deg, #00FFFF, #FFA201);
+	background: linear-gradient(340deg, #5B85AA, #372248);
 }
 .twittericon i {
 	font-size: 1.5em;
@@ -227,9 +227,32 @@ margin-top: 8vh;
 
 }
 
+.iframe-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+.iframe-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.artifact-title {
+	padding-top: 4vh;
+}
+
 @media (prefers-color-scheme: dark) {
 	#silhouette {
-		content: url(../../assets/images/silhouette_dark.png);
+		content: url(../../assets/images/silhouette_dark.webp);
+	}
+
+	#welcomeimg {
+		content: url(../../assets/images/welcome_dark.webp);
 	}
 }
 

@@ -28,14 +28,14 @@ $(document).ready(function() {
     if($.cookie("ody-theme") == 2){
     
     
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #534548, #da0628) 0% 0% / 200% '});
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #D07119, #4B3F72) 0% 0% / 200% '});
 	    $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
     }
     
     if($.cookie("ody-theme") == 3){
         
     
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #00FFFF, #FFA201) 0% 0% / 200% '});
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #5B85AA, #372248) 0% 0% / 200% '});
         $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
     }
     
@@ -57,7 +57,7 @@ $(document).ready(function() {
     $("#Meridian").on('click',function(){
     
         $.cookie("ody-theme", 2);
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #534548, #da0628) 0% 0% / 200% '});
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #D07119, #4B3F72) 0% 0% / 200% '});
 	    $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
     });
     
@@ -65,7 +65,7 @@ $(document).ready(function() {
     
         $.cookie("ody-theme", 3);
     
-        $(".hero-jumbo").css({background:'linear-gradient(242deg, #00FFFF, #FFA201) 0% 0% / 200% '});
+        $(".hero-jumbo").css({background:'linear-gradient(242deg, #5B85AA, #372248) 0% 0% / 200% '});
         $(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
      });
     
